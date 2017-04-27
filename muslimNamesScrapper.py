@@ -8,6 +8,13 @@ import xlrd
 boys_names = []
 girls_names = []
 
+
+# Output Excel File
+output_excel_file = 'Muslim Names.xlsx'
+
+
+
+
 # Output for HTML code
 filename = "output.txt"
 
@@ -74,7 +81,7 @@ for pageno in range(1, 244):
 print(len(boys_names))
 print(len(girls_names))
 
-workbook = Workbook('Muslim Names.xlsx')
+workbook = Workbook(output_excel_file)
 boys_worksheet = workbook.add_worksheet()
 girls_worksheet = workbook.add_worksheet()
 
